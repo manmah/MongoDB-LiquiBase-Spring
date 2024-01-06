@@ -1,0 +1,26 @@
+databaseChangeLog:
+#  - changeSet:
+#      id: 6
+#      author: yourname
+#      changes:
+#        - update:
+#            collectionName: GroceryItem
+#            updates:
+#              - addFields:
+#                  field:
+#                    name: expirationDate
+#                    value: 2023-12-31  # Set a default value or use null if needed
+#                    type: date  # Adjust the type as needed
+#                    multi: true
+
+
+  - changeSet:
+      id: "7"
+      author: "YourAuthor"
+      comment: "Update name in GroceryItem collection"
+      changes:
+        - customChange:
+            name: runCommand
+            properties:
+              command: "{ \"update\": \"GroceryItem\", \"updates\": [{\"q\": {}, \"u\": {\"$set\": {\"name\": \"YourNewName\"}}, \"upsert\": false, \"multi\": true}], \"ordered\": true }"
+    rollback: []
