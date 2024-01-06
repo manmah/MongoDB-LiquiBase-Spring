@@ -38,30 +38,6 @@
         </mongodb:insertOne>
     </changeSet>
 
-<!--
-
-       <changeSet id="4" author="Maher">
-        <mongodb:updateOne collectionName="GroceryItem">
-            <mongodb:set>
-                {
-                _id: "0002"
-                name: "Another New Product"
-                quantity:5
-                category:"food"
-                new:"new field"
-                }
-            </mongodb:set>
-        </mongodb:updateOne>
-    </changeSet>
-
-   &lt;!&ndash; Example changeset to add the "expirationDate" field to every document in the "GroceryItem" collection &ndash;&gt;
-    <changeSet author="liquibase" id="2024010200001" dbms="mongodb" labels="Add newField to all documents in myCollection">
-        <mongodb:runCommand>
-            <mongodb:command>
-                    {$set:{"someField": "someValue"}}
-            </mongodb:command>
-        </mongodb:runCommand>
-    </changeSet>-->
 
 
 </databaseChangeLog>
