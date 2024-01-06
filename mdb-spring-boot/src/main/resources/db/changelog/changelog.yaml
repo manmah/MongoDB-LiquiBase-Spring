@@ -16,7 +16,7 @@ databaseChangeLog:
 
   - changeSet:
       id: "7"
-      author: "YourAuthor"
+      author: "Maher"
       comment: "Update name in GroceryItem collection"
       changes:
         - customChange:

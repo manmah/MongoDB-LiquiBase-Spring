@@ -52,6 +52,7 @@ public class MdbSpringBootApplication implements CommandLineRunner {
 
         showAllGroceryItems();
 
+
     }
 
     // CRUD operations
